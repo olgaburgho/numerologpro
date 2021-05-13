@@ -67,7 +67,7 @@ const useStyles = makeStyles(() => createStyles({
   disableAlign: {
     // @ts-ignore
     textAlign: 'left !important',
-    paddingLeft: '25px !important',
+    paddingLeft: '15px !important',
   },
   footer: {
     marginTop: 30,
