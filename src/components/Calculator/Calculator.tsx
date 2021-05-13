@@ -41,10 +41,12 @@ const useStyles = makeStyles(() => createStyles({
     width: '100%',
     '& td': {
       textAlign: 'center',
-      padding: 10,
-      paddingTop: 28,
-      paddingBottom: 28,
       border: '1px solid black',
+      width: '25%',
+      paddingBottom: '5%',
+      paddingTop: '5%',
+      paddingLeft: 10,
+      paddingRight: 10,
     },
   },
   smallTable: {
@@ -54,6 +56,7 @@ const useStyles = makeStyles(() => createStyles({
     fontSize: 10,
 
     '& td': {
+      width: '25%',
       padding: 5,
       paddingBottom: 15,
       paddingTop: 15,
@@ -63,7 +66,8 @@ const useStyles = makeStyles(() => createStyles({
   },
   disableAlign: {
     // @ts-ignore
-    textAlign: 'left !important'
+    textAlign: 'left !important',
+    paddingLeft: '25px !important',
   },
   footer: {
     marginTop: 30,
