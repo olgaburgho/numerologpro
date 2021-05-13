@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/numerologpro/static/css/main.b4e66a3d.chunk.css",
+    "main.js": "/numerologpro/static/js/main.66c86834.chunk.js",
+    "main.js.map": "/numerologpro/static/js/main.66c86834.chunk.js.map",
+    "runtime-main.js": "/numerologpro/static/js/runtime-main.2259fa60.js",
+    "runtime-main.js.map": "/numerologpro/static/js/runtime-main.2259fa60.js.map",
+    "static/js/2.d7b93ff9.chunk.js": "/numerologpro/static/js/2.d7b93ff9.chunk.js",
+    "static/js/2.d7b93ff9.chunk.js.map": "/numerologpro/static/js/2.d7b93ff9.chunk.js.map",
+    "static/js/3.93e46b78.chunk.js": "/numerologpro/static/js/3.93e46b78.chunk.js",
+    "static/js/3.93e46b78.chunk.js.map": "/numerologpro/static/js/3.93e46b78.chunk.js.map",
+    "index.html": "/numerologpro/index.html",
+    "static/css/main.b4e66a3d.chunk.css.map": "/numerologpro/static/css/main.b4e66a3d.chunk.css.map",
+    "static/js/2.d7b93ff9.chunk.js.LICENSE.txt": "/numerologpro/static/js/2.d7b93ff9.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2259fa60.js",
+    "static/js/2.d7b93ff9.chunk.js",
+    "static/css/main.b4e66a3d.chunk.css",
+    "static/js/main.66c86834.chunk.js"
+  ]
+}
