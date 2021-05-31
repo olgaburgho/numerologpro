@@ -188,7 +188,7 @@ export function Calculator() {
 
     let num = sumIntArray(strToDigitArray(dateValue));
 
-    while (num > 10 && num !== 11) {
+    while (num > 9 && num !== 11) {
       num = sumIntArray(strToDigitArray(num.toString()))
     }
 
@@ -227,6 +227,7 @@ export function Calculator() {
     + `/ц${outComplexNum(calcBaseNum(MAGIC.CHARACTER) + calcBaseNum(MAGIC.HEALTH) + calcBaseNum(MAGIC.LUCK))}`
     + `/с${outComplexNum(calcBaseNum(MAGIC.ENERGY) + calcBaseNum(MAGIC.LOGIC) + calcBaseNum(MAGIC.DUTY))}`
     + `/д${outComplexNum(calcBaseNum(MAGIC.HEALTH) + calcBaseNum(MAGIC.LOGIC) + calcBaseNum(MAGIC.LABOR))}`
+    + `/чжп${calculateFate()}`
   };
 
   const outputValue = (value: any) => (isCalculated ? value : '');
