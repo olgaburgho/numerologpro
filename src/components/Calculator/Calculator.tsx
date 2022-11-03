@@ -19,6 +19,7 @@ const useStyles = makeStyles(() => createStyles({
     overflow: 'hidden'
   },
   pageTitle: {
+    fontWeight: 400,
     textAlign: "center"
   },
   button: {
@@ -72,7 +73,7 @@ const useStyles = makeStyles(() => createStyles({
   footer: {
     marginTop: 30,
     marginBottom: 25,
-    fontWeight: 'bold',
+    fontWeight: 400,
     textAlign: 'center',
     fontSize: 20,
 
@@ -134,7 +135,7 @@ export function Calculator() {
   // Лень использовать билдер
   const additionalNumString = useMemo(
     () => `${strToDigitArray(dateValue)}${additionalDigits[ADIGIT.FIRST]}${additionalDigits[ADIGIT.SECOND]}${additionalDigits[ADIGIT.THIRD]}${additionalDigits[ADIGIT.FOURTH]}`,
-    [additionalDigits]
+    [additionalDigits, dateValue]
   );
 
   const outBaseNum = (num: number): string => {
@@ -293,7 +294,7 @@ export function Calculator() {
                   </div>
                 </td>
                 <td className={classes.primary}>
-                  <div>Плотское</div>
+                  <div>Темперамент</div>
                   {outComplexNum(calcBaseNum(MAGIC.INTEREST) + calcBaseNum(MAGIC.LOGIC) + calcBaseNum(MAGIC.LUCK))}
                 </td>
               </tr>
@@ -357,16 +358,16 @@ export function Calculator() {
                 <td className={classes.secondary}>
                 </td>
                 <td className={classes.secondary}>
-                  <div>Деньги</div>
+                  <div>Быт</div>
                   {outComplexNum(calcBaseNum(MAGIC.HEALTH) + calcBaseNum(MAGIC.LOGIC) + calcBaseNum(MAGIC.LABOR))}
                 </td>
                 <td className={classes.secondary}>
-                  <div>Талант</div>
-                  {outComplexNum(calcBaseNum(MAGIC.LUCK) + calcBaseNum(MAGIC.DUTY) + calcBaseNum(MAGIC.MEMORY))}
+                  {/*<div>Талант</div>*/}
+                  {/*{outComplexNum(calcBaseNum(MAGIC.LUCK) + calcBaseNum(MAGIC.DUTY) + calcBaseNum(MAGIC.MEMORY))}*/}
                 </td>
                 <td className={classes.primary}>
-                  <div>Духовное</div>
-                  {outComplexNum(calcBaseNum(MAGIC.CHARACTER) + calcBaseNum(MAGIC.LOGIC) + calcBaseNum(MAGIC.MEMORY))}
+                  {/*<div>Духовное</div>*/}
+                  {/*{outComplexNum(calcBaseNum(MAGIC.CHARACTER) + calcBaseNum(MAGIC.LOGIC) + calcBaseNum(MAGIC.MEMORY))}*/}
                 </td>
               </tr>
               </tbody>
@@ -396,12 +397,12 @@ export function Calculator() {
           </Grid>
           <Grid item xs={12}>
             <div className={classes.note}>
-              *скопируйте эту строку и вставьте в комментарии под последним постом вместе со своим вопросом
+              *скопируйте эту строку и вставьте вместе со своим вопросом в специальное окно в сторис в рубрике «вопрос-ответ»
             </div>
           </Grid>
           <Grid item xs={12}>
             <div className={classes.footer}>
-              <a rel="noreferrer" href="https://www.instagram.com/numerolog__pro/" target="_blank">@numerolog__pro</a>
+              <a rel="noreferrer" href="https://www.instagram.com/olga_kolagorova/" target="_blank">@olga_kolagorova</a>
             </div>
           </Grid>
         </Grid>
